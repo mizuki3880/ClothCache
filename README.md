@@ -1,2 +1,2 @@
-# friendly-waddle
+# ClothCache
 古着を管理するためのフルスタックアプリケーション
