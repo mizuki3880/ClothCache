@@ -4,11 +4,17 @@ services:
   frontend:
     build:
       context: ./front-end
+    volumes:
+      - ./front-end:/usr/src/app
+    working_dir: /usr/src/app
     ports:
       - "3000:3000"
+    command: npm start
 
   backend:
     build:
       context: ./back-end
+    working_dir: /app
     ports:
       - "8080:8080"
+    command: java -jar /app/app.jar

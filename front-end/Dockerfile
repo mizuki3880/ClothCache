@@ -9,7 +9,7 @@ COPY package.json ./
 COPY yarn.lock ./
 
 # 依存関係のインストール
-RUN npm install
+RUN npm install --legacy-peer-deps
 
 # ソースコードのコピー
 COPY . ./
