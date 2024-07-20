@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button, Card, CardContent, Link, TextField } from '@mui/material';
 import './Login.css';
 
-export default function Login() {
+export default function SignUp() {
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
 
@@ -13,7 +13,7 @@ export default function Login() {
 
   return (
     <div className="login-container">
-      <h2>ログイン</h2>
+      <h2>サインアップ</h2>
       <Card sx={{ minWidth: 275 }}>
         <CardContent>
           <form onSubmit={handleSubmit}>
@@ -45,14 +45,14 @@ export default function Login() {
                 fullWidth
                 id="login-button"
               >
-                ログイン
+                サインアップ
               </Button>
             </div>
             <div className="login-link">
               <Link href="#" underline="hover">
                 パスワードを忘れてしまいましたか？
               </Link>
-              <Link href="/signup" underline="hover">
+              <Link href="/" underline="hover">
                 サインアップ
               </Link>
             </div>
